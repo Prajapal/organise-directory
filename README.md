@@ -9,6 +9,6 @@
 python organising_files.py
 ```
 
-2. Run the program directly after double clicking the file
+2. Run the program directly after double clicking the organising_files.py file
 
 
