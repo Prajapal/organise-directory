@@ -13,9 +13,11 @@ extentions_dict = {
 
 
 
+# Asks user for the directory path
 path = input("Please enter the folder path you want to organise and clean: ")
 
 
+# Returns a lsit of files present in the input folder with the provided file extentions
 def extract_in_list(folder_path, file_extentions):
     files_list = []
     for file in os.listdir(folder_path):
@@ -25,6 +27,7 @@ def extract_in_list(folder_path, file_extentions):
     return files_list
 
 
+# 
 for type_extentions, type_tuple in extentions_dict.items():
     files_list = extract_in_list(path, type_tuple)
 
@@ -49,55 +52,3 @@ print("Program execution successfull")
 print("Check your folder for organised files")
 
 
-
-        
-
-
-
-        
-
- 
-# for type_extention, type_tuple in extentions_dict.items():
-#     for extention in type_tuple:
-#         for file in os.listdir(path):
-#             if file.endswith(extention):
-
-#                 directory = type_extention.split("_")[0] + " " + "files"
-#                 directory_path = os.path.join(path, directory)
-#                 if os.path.exists(directory_path) == False:
-#                     os.mkdir(directory_path)
-                
-#                 old_path = os.path.join(path, file)
-#                 new_path = os.path.join(directory_path, file)
-
-#                 shutil.move(old_path, new_path)
-
-
-
-
-
-
-
-        
-# image_list = extract_in_list(path, extentions_dict["image_extentions"])
-# image_folder_path = os.path.join(path, "Images")
-# if os.path.exists(image_folder_path) == False:
-#     os.mkdir(image_folder_path)
-# for image in image_list:
-#     old_path = os.path.join(path, image)
-#     new_path = os.path.join(image_folder_path, image)
-
-#     shutil.move(old_path, new_path)
-
-
-
-
-
-
-
-
-# print(extract_in_list(path, image_extentions))
-#     # print(files_list)
-
-# for file in os.listdir(path):
-#     if file.endswith() in 
